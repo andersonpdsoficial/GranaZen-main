@@ -39,5 +39,5 @@ RegisterForm.addEventListener('submit', function(evento){
     };
 
     localStorage.setItem("registrationFormData", JSON.stringify(registrationFormData));
-    window.location.href = 'https://app-finance-flame.vercel.app/pages/Home.html'
+    window.location.href = 'https://grana-zen-main.vercel.app/pages/Home.html'
 });

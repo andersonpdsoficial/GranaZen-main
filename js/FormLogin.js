@@ -27,7 +27,7 @@ const LoginForm = document.getElementById('LoginForm').addEventListener('submit'
             <p class='m-0 fs-5'>Dados inválidos, verifique.</p>
         </div>`
     } else {
-        window.location.href = 'https://app-finance-flame.vercel.app/pages/Home.html';
+        window.location.href = 'https://grana-zen-main.vercel.app/pages/Home.html';
     }
 
 })

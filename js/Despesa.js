@@ -42,7 +42,7 @@ LogOut.addEventListener("click", function () {
 });
   
   const modalSair = document.getElementById("modalSair").addEventListener("click", function () {
-    window.location.href = "https://app-finance-flame.vercel.app/pages/Login.html";
+    window.location.href = "https://grana-zen-main.vercel.app/pages/Login.html";
 });
   const modalCancelar = document.getElementById("modalCancelar").addEventListener("click", function () {
     logOutModal.classList.remove("d-flex");
