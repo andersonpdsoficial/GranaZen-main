@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  a {
+    color: var(--green);
+    text-decoration: none;
+  }
+  font-family: "Poppins";
+
+  button {
+    border: none;
+  }
+}
+
+:root {
+  font-size: 10px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --background-primary: #161616;
+  --background-items: #191919;
+  --background-inputs: #242424;
+  --border-items: #5151513f;
+  --text-lightgray: #7f7f7f;
+  --green: #10b981;
+  --red: #EF4444;
+}
+
+body {
+  background-color: var(--background-primary);
+}
+html{
+  scroll-behavior: smooth;
+}
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+.bg-primary {
+  background-color: var(--background-primary) !important;
+}
+.bg-items {
+  background-color: var(--background-items);
+}
+.bg-inputs {
+  background-color: var(--background-inputs);
+}
+.bg-green {
+  background-color: var(--green);
+}
+.border-items {
+  border: 1px solid var(--border-items);
+}
+.border-green {
+  border: 1px solid var(--green);
+}
+.border-bottom-green {
+  border-bottom: 1px solid var(--green);
+}
+.text-lightgray {
+  color: var(--text-lightgray);
+}
+.text-red {
+  color: var(--red);
+}
+.text-green {
+  color: var(--green);
+}
+.outline:focus {
+  outline: 1px solid var(--green);
+}
+.w-fit {
+  width: fit-content;
+}
+.h-fit {
+  height: fit-content;
+}
+.w-85 {
+  width: 85%;
+}
+.w-15 {
+  width: 25em;
+}
+.w-register-login {
+  width: 55%;
+}
+.w-card {
+  width: 17rem;
+}
+.padding-2 {
+  padding: 2rem;
+}
+.gap2 {
+  display: flex;
+  gap: 2rem;
+}
+.gap1 {
+  gap: 0.5rem;
+}
+.errorPassword,
+.errorInputsNull {
+  color: var(--red);
+}
+.nav-active {
+  color: var(--green);
+}
+.justify-content-betweenn {
+  display: flex;
+  justify-content: space-between;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.shadow-overlay {
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+.flex-column-reverse{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.border-table.d-flex {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+#Navbar {
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+nav {
+  border-bottom: 1px solid var(--green);
+}
+#toggleNavbar {
+  display: none;  
+}
+#table3ReceitasDespesas{
+  display: flex;
+}
+#tableDespesas, #tableReceitas{
+  width: 50%;
+}
+#fecharNavbar {
+  display: none;
+}
+
+#tableWidth{
+  width: 50%;
+}
+#GrapichWidth{
+  width: 48%;
+}
+.border-table{
+  border: 1px solid var(--border-items);
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.flexItens{
+  display: flex;
+}
+
+@media screen and (max-width: 840px) {
+.w-register-login {
+  width: 100%;
+}
+.flexItens{
+  justify-content: center;
+  flex-direction: column;
+}
+#MediaEBotoes{
+  margin: auto;  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+#toggleNavbar {
+  display: flex;
+}
+#Navbar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background: #212121;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 20px;
+  margin-top: 0;
+}
+#Navbar.open {
+  right: 0;
+}
+#fecharNavbar{
+  display: flex;
+}
+#Navbar.close {
+  right: -250px;
+}
+.menu-icon {
+  position: fixed;
+  top: 100rem;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#NavbarList {
+  flex-direction: column;
+}
+nav {
+  border: none;
+}
+#table3ReceitasDespesas{
+  justify-content: center;
+}
+#tableDespesas, #tableReceitas{
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 990px) {
+  #tableWidth, #GrapichWidth{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1288px) {
+  .justify-content-betweenn {
+    justify-content: center;
+  }
+}
+.animate-fade {
+  animation-name: slideFadeIn;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
